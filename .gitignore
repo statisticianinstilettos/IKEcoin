@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# latex files
+.aux
+.log
+
+# jupyter lab stuff
+.ipynb_checkpoints
+
+# Mac shit
+.DS_Store
