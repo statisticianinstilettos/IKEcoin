@@ -7,8 +7,9 @@
 \sectionfont{\color{blue}}  
 \subsectionfont{\color{cyan}}  
 
-%package for imbedding iamges
+%package for imbedding images and math
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 %define the information in the title
 \title{\color{cyan}IKEcoin: \\ 
@@ -43,10 +44,25 @@ Coming soon...
 
 
 \section{Token Economics}
-Coming soon...
+IKEcoin is a soft asset Ethereum token for data transactions through IKEcoin-Auth; a social login protocol for selling personal data. Soft asset tokens are backed by the value of a real asset that is not physical or tangible. In this case IKEcoin is backed by data as the soft asset. The token offers a secure and scalable way to buy and sell data and allow the decentralized economy to place a fair price on the data asset itself. \\
 
+IKEcoin tokens can be traded on the cryptocurrency market, allowing the crypto market to set the price of the social media data in IKEcoin. IKEcoin users earn tokens by connecting social accounts and selling this data to interested parties by their IKEcoin-Auth login protocol to log into websites. Customers pay the users in IKEcoin tokens when the user logs into their website with IKEcoin-Auth protocol. At any time, IKEcoin tokens can be converted to other coins, tokens, or cash. \\
 
-\section{Marketplace}
+The price paid to the user is based on the market value for social data and the volume and quality of data the user has connected to their IKEcoin-Auth protocol. Let \\
+\begin{quote}
+$M =$ the fair market value for one unit of data\\
+$X =$ the size of the user's data\\
+$s =$ the number of social media accounts the user has connected\\
+$S =$ the total number of social accounts supported\\
+\end{quote}
+The price the customer is requested to pay to the user through an IKEcoin-Auth transaction is \\
+\begin{equation} 
+price=\frac{s}{S} \times M \times x 
+\end{equation}
+
+For every IKEcoin transaction, the price of the data is recorded on the Ethereum blockchain. These transaction records encode on the blockchain records of each translation including details on the parties involved(customers and users), the price paid, and the size and sources of the data purchased.
+
+\section{The New Data Marketplace}
 \subsubsection*{Economic Agents}
 \begin{itemize}
 \item \textit{User}\textbf{---}An individual consumer who has established ownership over their data by claiming their IKEcoin and connecting their social media accounts to their token.
@@ -88,7 +104,7 @@ There are several steps in a successful IKEcoin transaction between the User and
   \setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
-  \item The User idirectly profit from the sale of their data
+  \item The User directly profit from the sale of their data
   \item The User chooses who they sell their data to
 \end{itemize}
 
