@@ -13,8 +13,8 @@
 
 %define the information in the title
 \title{\color{cyan}IKEcoin: \\ 
-\large A decentralized token economy empowering humans with controlling ownership of their own social media data}
-\author{Claire Longo}
+\large A decentralized token economy empowering humans with controlling ownership of their social media data}
+\author{Claire Longo, Isaac Longo}
 \date{June 2021}
 
 \begin{document}
@@ -28,7 +28,7 @@
 \end{figure}
 
 \begin{abstract}
-\textit{IKEcoin is a social sign-on protocol that allows individual consumers to trade their data for personal profit. This whitepaper describes the motivation and need for this new data marketplace, an overview of the system design and token economy, and a roadmap for creating the first version of IKEcoin. }
+\textit{IKEcoin-Auth is a social sign-on protocol that allows individual consumers to trade their data for personal profit using an Ethereum based assets token IKEcoin. This whitepaper describes this new data marketplace, gives an overview of the system design and token economy, and lays out a roadmap for creating the first version of the IKEcoin system }
 \end{abstract}
  \pagebreak
 
@@ -37,7 +37,7 @@ The purpose of this project is to disrupt the data market by giving individual c
 
 Humans should own their own data as a personal asset. They should be given the choice to either sell it for profit, or keep it private. The marketplace for these data transactions should be clear and easy to use so all humans can fairly engage in the data market. \\
 
-IKEcoin is a decenteralized authorization protocol that supports fair data transactions. The IKEcoin auth is a social login method that allows users to log into websites with a single username and password. This single login authorizes organizations to access the user's data from all social media accounts the user has linked to their IKEcoin. As a result IKEcoin creates a new marketplace where data is the gold-standard for the value of the tokens traded. \\
+The IKEcoin-Auth is a social login method that allows users to log into websites with a single username and password. This single login authorizes organizations to access the user's data from all social media accounts the user has linked to their IKEcoin. That accessed through IKEcoin-Auth is paid for in IKEcoin tokens, an asset token built on ETH blockchain. This system creates a new marketplace where data is the gold-standard for the value of the IKEcoin tokens traded. \\
 
 \section{System Design}
 Coming soon...
@@ -65,7 +65,7 @@ For every IKEcoin transaction, the price of the data is recorded on the Ethereum
 \section{The New Data Marketplace}
 \subsubsection*{Economic Agents}
 \begin{itemize}
-\item \textit{User}\textbf{---}An individual consumer who has established ownership over their data by claiming their IKEcoin and connecting their social media accounts to their token.
+\item \textit{User}\textbf{---}An individual consumer who has established ownership over their data by connecting their social media accounts to their IKEcoin-Auth protocol.
 \item \textit{Customer}\textbf{---}A company seeking to obtain access and legal authorization to the User's data.
 \item \textit{Data Creator}\textbf{---}A social media platform that generates User's data.
 \end{itemize}
@@ -74,25 +74,25 @@ For every IKEcoin transaction, the price of the data is recorded on the Ethereum
 There are several steps in a successful IKEcoin transaction between the User and Customer. Consider this example where Isaac is an avid social media user with a passion for skiing, and he is connecting his data with an e-commerce company specialized in selling ski equipment. The steps in the transaction are;
 \begin{enumerate}
 
-\item Isaac sets up his IKEcoin account by claiming his IKEcoin at ikecoin.com. He connects his social media accounts to his IKEcoin auth protocol.
+\item Isaac sets up his IKEcoin account at ikecoin.com. He connects his social media accounts to his IKEcoin-Auth protocol.
 \begin{figure}[h]
 \includegraphics[scale=0.3]{media/AddSocial.jpg}
 \centering
 \end{figure}
   
-\item The value of his IKEcoin is based on the fair market value for the data, the number of accounts linked, and the size of the data he connected
+\item The value of his data connected to IKEcoin is based on the fair market value for the data, the number of accounts linked, and the size and quality of the data he connected
 \begin{figure}[h]
 \includegraphics[scale=0.3]{media/Welcome.jpg}
 \centering
 \end{figure}
    
-\item An e-commerce company focused on selling ski equipment has enabled IKEcoin auth at login. They have written a clear terms of service agreement detailing how they will use data obtained through IKEcoin auth. Isaac accepts this agreement and uses his IKEcoin auth to log in to the website 
+\item An e-commerce company focused on selling ski equipment has enabled IKEcoin-Auth at login. They have written a clear terms of service agreement detailing how they will use data obtained through IKEcoin-Auth. Isaac accepts this agreement and uses his IKEcoin-Auth to log in to the website 
 \begin{figure}[h]
 \includegraphics[scale=0.3]{media/IKEcoinLogin.jpg}
 \centering
 \end{figure}
     
-\item The e-commerce site pays Isaac for access to his data  in IKEtokens
+\item The e-commerce site pays Isaac for access to his data  in IKEcoin tokens.
     
 \item The e-commerce website uses Isaac's social media data to improve their machine learning algorithm that automatically produces personalized product recommendations 
     
@@ -133,16 +133,16 @@ There are several steps in a successful IKEcoin transaction between the User and
 The first version of IKEcoin requires the following components of functionality:
 \\
 \\
-\textcolor{yellow}{Website} : the IKEcoin website where users can claim and manage their IKEcoin.
+\textcolor{yellow}{Website} : the IKEcoin website where users can claim and manage their IKEcoin-Auth and tokens.
 \\
 \\
-\textcolor{yellow}{Software} : a Software Development Kit(SDK )for developers to use to easily integrate IKEcoin auth onto their websites.
+\textcolor{yellow}{Software} : a Software Development Kit(SDK )for developers to use to easily integrate IKEcoin-Auth onto their websites.
 \\
 \\
 \textcolor{yellow}{Token} : the decenteralized IKEcoin token. \\
 
 
-The first version of IKEcoin will support a limited list of social accounts. We will continue to add new sources of data as we continue to build out IKEcoin. The social accounts we will focus on in the MVP are determined based on the quality of data and popularity of the platform. 
+The first version of IKEcoin-Auth will support a limited list of social accounts. We will continue to add new sources of data as we continue to build. The social accounts we will focus on in the MVP are determined based on the quality of data and popularity of the platform. 
 \begin{itemize}
   \setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}
