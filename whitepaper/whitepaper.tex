@@ -1,51 +1,60 @@
 \documentclass[12pt, letterpaper, twoside]{article}
 \usepackage[utf8]{inputenc}
 
+%set up color scheme
 \usepackage{xcolor}
 \usepackage{sectsty}
 \sectionfont{\color{blue}}  
 \subsectionfont{\color{cyan}}  
 
+%package for imbedding iamges
 \usepackage{graphicx}
 
+%define the information in the title
 \title{\color{cyan}IKEcoin: \\ 
-\large A decentralized authentication protocol and token economy empowering humans to own and sell their own social media data}
-\author{Claire Longo, Isaac Longo}
+\large A decentralized token economy empowering humans with controlling ownership of their own social media data}
+\author{Claire Longo}
 \date{June 2021}
 
 \begin{document}
 
 \maketitle
 
+%insert IKEcoin art
 \begin{figure}[h]
-  \includegraphics[scale=0.5]{media/IKEcoin.jpg}
+  \includegraphics[scale=0.3]{media/IKEcoin.jpg}
   \centering
 \end{figure}
 
 \begin{abstract}
-  \noindent
-  beep boop bop
+\textit{IKEcoin is a social sign-on protocol that allows individual consumers to trade their data for personal profit. This whitepaper describes the motivation and need for this new data marketplace, an overview of the system design and token economy, and a roadmap for creating the first version of IKEcoin. }
 \end{abstract}
-
+ \pagebreak
 
 \section{Motivation}
-blah blah blah
+The purpose of this project is to disrupt the data market by giving individual consumers controlling ownership over their own personal social media data. Data is commonly referred to as the new oil because it is one of the most valuable assets in today's economy. Organizations use data to drive decision making, automate complex processes, and curate personalized experiences for their customers. Although companies view this data as hugely valuable asset to drive their business, individual consumers are not directly compensated when their personal data is collected or used. \\
+
+Humans should own their own data as a personal asset. They should be given the choice to either sell it for profit, or keep it private. The marketplace for these data transactions should be clear and easy to use so all humans can fairly engage in the data market. \\
+
+IKEcoin is a decenteralized authorization protocol that supports fair data transactions. The IKEcoin auth is a social login method that allows users to log into websites with a single username and password. This single login authorizes organizations to access the user's data from all social media accounts the user has linked to their IKEcoin. As a result IKEcoin creates a new marketplace where data is the gold-standard for the value of the tokens traded. \\
 
 \section{System Design}
-blah blah blah
+Coming soon...
 
 
 \section{Token Economics}
-blah blah blah
+Coming soon...
 
 
-\section{User-Customer Transacton example}
+\section{Marketplace}
 \subsubsection*{Economic Agents}
 \begin{itemize}
 \item \textit{User}\textbf{---}An individual consumer who has established ownership over their data by claiming their IKEcoin and connecting their social media accounts to their token.
 \item \textit{Customer}\textbf{---}A company seeking to obtain access and legal authorization to the User's data.
+\item \textit{Data Creator}\textbf{---}A social media platform that generates User's data.
 \end{itemize}
 
+\subsubsection*{Data Transaction Example}
 There are several steps in a successful IKEcoin transaction between the User and Customer. Consider this example where Isaac is an avid social media user with a passion for skiing, and he is connecting his data with an e-commerce company specialized in selling ski equipment. The steps in the transaction are;
 \begin{enumerate}
 
@@ -69,31 +78,75 @@ There are several steps in a successful IKEcoin transaction between the User and
     
 \item The e-commerce site pays Isaac for access to his data  in IKEtokens
     
-\item The e-commerce website uses Isaac's social media data to improve their ML algorithm that gives personalized product recommendations 
+\item The e-commerce website uses Isaac's social media data to improve their machine learning algorithm that automatically produces personalized product recommendations 
     
-\item Isaac buys the new set of ski boots recommended to him by the ML algorithm    
+\item Isaac buys the new set of ski boots recommended to him by the machine learning algorithm    
 \end{enumerate}
 
 \subsubsection*{Benefit to the User}
 \begin{itemize}
-\item The User is able to directly profit from the sale of their data
-\item The User can choose who to sell their data to
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item The User idirectly profit from the sale of their data
+  \item The User chooses who they sell their data to
 \end{itemize}
-
 
 \subsubsection*{Benefit to the Customer}
 \begin{itemize}
-\item Customer can easily collect large amounts of data on their users
-\item The customer can obtained direct legal authorization from the User to access and use their data
-\item The data for a single user is already joined across multiple social accounts so they can create a coherent user journey and easily manage their customer's profiles
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item The customer easily collect large amounts of data on their users to enhance their data-driven projects
+  \item The customer obtains direct legal authorization from the user to access and use their data
+  \item The data for a single user is already joined across multiple social accounts so the customer can create a experience for their users and easily manage their user's profiles
+  \item By allowing users to log in with IKEcoin auth instead of a single social login such as facebook or Instagram, the customer is able to collect data from multiple social media accounts instead of one per user
+\end{itemize}
+
+\subsubsection*{Benefit to the Data Curation}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item IKEcoin creates an incentive for Users to create more social median accounts to connect to their IKEcoin
+  \item IKEcoin creates an incentive for Users to use each social media platform more as a method to generate more data
 \end{itemize}
 
 
-
 \section{Roadmap/MVP definition}
-blah blah blah
+The first version of IKEcoin requires the following components of functionality:
+\\
+\\
+\textcolor{yellow}{Website} : the IKEcoin website where users can claim and manage their IKEcoin.
+\\
+\\
+\textcolor{yellow}{Software} : a Software Development Kit(SDK )for developers to use to easily integrate IKEcoin auth onto their websites.
+\\
+\\
+\textcolor{yellow}{Token} : the decenteralized IKEcoin token. \\
 
-\section{Conclusion}
-blah blah blah
+
+The first version of IKEcoin will support a limited list of social accounts. We will continue to add new sources of data as we continue to build out IKEcoin. The social accounts we will focus on in the MVP are determined based on the quality of data and popularity of the platform. 
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[$-$] Facebook
+  \item[$-$] Instagram
+  \item[$-$] Linkedin
+  \item[$-$] Reddit
+  \item[$-$] Twitter
+\end{itemize}
+
+\section{Risks}
+There are a few main risks identified for this project. Most risks involve the Data Creator's willingness to allow the user sell their own personal data.
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item[$\diamond$]  The Data Creators may  choose to shut down user’s access to their own data through the APIs.
+  \item[$\diamond$]  The Data Creators may start directly selling the users data to compete with the users in new market.
+  \item[$\diamond$]  The Customers may not be willing to pay the users for the data.
+\end{itemize}
 
 \end{document}
